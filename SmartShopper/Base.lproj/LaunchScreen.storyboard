@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smartShopper" translatesAutoresizingMaskIntoConstraints="NO" id="NE3-PY-GOE">
-                                <rect key="frame" x="32" y="206" width="310" height="234"/>
+                                <rect key="frame" x="52" y="206" width="310" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJm-87-CUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-274" y="-251"/>
+            <point key="canvasLocation" x="-275.36231884057975" y="-251.11607142857142"/>
         </scene>
     </scenes>
     <resources>

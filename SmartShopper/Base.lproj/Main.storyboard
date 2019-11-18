@@ -27,7 +27,7 @@
                                     <segment title="New User"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segmentControl:" destination="hL0-xL-P7O" eventType="valueChanged" id="dXR-u0-59Y"/>
+                                    <action selector="segmentControl:" destination="hL0-xL-P7O" eventType="valueChanged" id="hxZ-h5-zUT"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqm-Wg-sol">
@@ -62,14 +62,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-GO-WoI">
-                                <rect key="frame" x="159" y="582" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Register"/>
-                                <connections>
-                                    <action selector="signUp:" destination="hL0-xL-P7O" eventType="touchUpInside" id="h7G-D7-b56"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNs-gD-Qih">
                                 <rect key="frame" x="28" y="364" width="107" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,12 +70,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bU-sw-WqO">
-                                <rect key="frame" x="167" y="535" width="40" height="32"/>
+                                <rect key="frame" x="175" y="692" width="67" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="login:" destination="hL0-xL-P7O" eventType="touchUpInside" id="n4C-FR-lPA"/>
+                                    <action selector="loginButton:" destination="hL0-xL-P7O" eventType="touchUpInside" id="JbE-CT-cSC"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shopping" translatesAutoresizingMaskIntoConstraints="NO" id="YsT-t9-9tj">
+                                <rect key="frame" x="7" y="156" width="387" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-GO-WoI">
+                                <rect key="frame" x="161" y="761" width="96" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signupButton:" destination="hL0-xL-P7O" eventType="touchUpInside" id="8rG-0I-KZC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,23 +96,25 @@
                         <viewLayoutGuide key="safeArea" id="4EZ-jS-6ho"/>
                     </view>
                     <connections>
-                        <outlet property="emailLabel" destination="RNs-gD-Qih" id="R2E-2q-l5e"/>
-                        <outlet property="emailText" destination="iDJ-Ov-NKv" id="WK7-1e-Zge"/>
-                        <outlet property="loginButton" destination="9bU-sw-WqO" id="xVd-22-lfY"/>
-                        <outlet property="passwordLabel" destination="K6h-46-PD5" id="2jT-wO-BAY"/>
-                        <outlet property="passwordText" destination="stE-6a-J6V" id="c4E-VV-7U2"/>
-                        <outlet property="segmentControl" destination="96P-bh-T7K" id="Fk1-kU-t15"/>
-                        <outlet property="signupButton" destination="DGq-GO-WoI" id="nFi-ac-H3A"/>
-                        <outlet property="usernameLabel" destination="Vqm-Wg-sol" id="mrL-wH-aU2"/>
-                        <outlet property="usernameText" destination="pVw-x9-R2v" id="GYe-lx-glA"/>
+                        <outlet property="emailLabel" destination="RNs-gD-Qih" id="xAp-Nk-1Rx"/>
+                        <outlet property="emailText" destination="iDJ-Ov-NKv" id="e47-Uh-Ofj"/>
+                        <outlet property="loginButton" destination="9bU-sw-WqO" id="2dl-bp-7wo"/>
+                        <outlet property="passwordLabel" destination="K6h-46-PD5" id="5ie-Wi-stZ"/>
+                        <outlet property="passwordText" destination="stE-6a-J6V" id="qdH-Wu-sKU"/>
+                        <outlet property="segmentControl" destination="96P-bh-T7K" id="SfV-1k-dUm"/>
+                        <outlet property="shoppingImage" destination="YsT-t9-9tj" id="hE2-um-iFx"/>
+                        <outlet property="signupButton" destination="DGq-GO-WoI" id="Csd-xf-xEa"/>
+                        <outlet property="usernameLabel" destination="Vqm-Wg-sol" id="QNj-GC-IIj"/>
+                        <outlet property="usernameText" destination="pVw-x9-R2v" id="nQH-WB-lk3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUo-h2-zsX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-287.19999999999999" y="20.239880059970016"/>
+            <point key="canvasLocation" x="-392.75362318840581" y="19.419642857142858"/>
         </scene>
     </scenes>
     <resources>
+        <image name="shopping" width="275" height="183"/>
         <image name="smartShopper" width="350" height="280"/>
     </resources>
 </document>
