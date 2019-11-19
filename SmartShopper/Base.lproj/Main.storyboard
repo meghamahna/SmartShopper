@@ -10,12 +10,12 @@
         <!--View Controller-->
         <scene sceneID="TY7-JF-WAq">
             <objects>
-                <viewController id="hL0-xL-P7O" customClass="ViewController" customModule="smartShopper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hL0-xL-P7O" customClass="ViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIW-Y3-yvr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smartShopper" translatesAutoresizingMaskIntoConstraints="NO" id="6ia-dj-X9G">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smartShopper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6ia-dj-X9G">
                                 <rect key="frame" x="58" y="20" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -78,7 +78,7 @@
                                     <action selector="loginButton:" destination="hL0-xL-P7O" eventType="touchUpInside" id="JbE-CT-cSC"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shopping" translatesAutoresizingMaskIntoConstraints="NO" id="YsT-t9-9tj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shopping.png" translatesAutoresizingMaskIntoConstraints="NO" id="YsT-t9-9tj">
                                 <rect key="frame" x="7" y="156" width="387" height="487"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -272,7 +272,7 @@
             </objects>
             <point key="canvasLocation" x="-392.75362318840581" y="19.419642857142858"/>
         </scene>
-        <!--Categories View Controller-->
+        <!--Categories-->
         <scene sceneID="yEp-IP-9op">
             <objects>
                 <viewController id="yez-i4-Uho" customClass="CategoriesViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
@@ -332,10 +332,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXd-1Q-S6A">
+                                <rect key="frame" x="35" y="142" width="108" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="soc-Gy-wJb" kind="show" id="Nkd-DR-dbR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fDH-E9-9OV"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WJu-LF-f9l">
+                    <navigationItem key="navigationItem" title="Categories" id="WJu-LF-f9l">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ellipsis" catalog="system" id="FEb-ER-reY">
                             <connections>
                                 <action selector="onMoreTapped" destination="yez-i4-Uho" id="5XS-yk-516"/>
@@ -346,6 +354,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUl-Cv-wmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2781.1594202898555" y="613.85869565217399"/>
+        </scene>
+        <!--Clothing Table View Controller-->
+        <scene sceneID="mdY-eu-Jw1">
+            <objects>
+                <tableViewController id="soc-Gy-wJb" customClass="ClothingTableViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AC4-7H-6rG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloth" rowHeight="43.666667938232422" id="tcW-1a-1rY">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tcW-1a-1rY" id="lFg-Bn-WCm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="soc-Gy-wJb" id="2w8-6H-hAo"/>
+                            <outlet property="delegate" destination="soc-Gy-wJb" id="5no-sK-Fka"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="y0j-fG-7og"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iga-sf-ymj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3592.753623188406" y="613.85869565217399"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QnG-In-gKC">
@@ -372,7 +409,7 @@
         <image name="electronics.png" width="550" height="400"/>
         <image name="ellipsis" catalog="system" width="64" height="18"/>
         <image name="footwear.jpg" width="600" height="440"/>
-        <image name="shopping" width="275" height="183"/>
-        <image name="smartShopper" width="350" height="280"/>
+        <image name="shopping.png" width="275" height="183"/>
+        <image name="smartShopper.jpg" width="350" height="280"/>
     </resources>
 </document>

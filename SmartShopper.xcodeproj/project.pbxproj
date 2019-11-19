@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1407362384A976006DCD85 /* HnM.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407352384A976006DCD85 /* HnM.png */; };
+		3A1407382384A9ED006DCD85 /* hollister.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407372384A9ED006DCD85 /* hollister.png */; };
 		3AE762B7238359820034BE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B6238359820034BE04 /* AppDelegate.swift */; };
 		3AE762B9238359820034BE04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B8238359820034BE04 /* SceneDelegate.swift */; };
 		3AE762BB238359820034BE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762BA238359820034BE04 /* ViewController.swift */; };
@@ -22,9 +24,13 @@
 		3AE762FC23846A140034BE04 /* electronics.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE762FB23846A140034BE04 /* electronics.png */; };
 		3AE7630023846AB50034BE04 /* footwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE762FF23846AB50034BE04 /* footwear.jpg */; };
 		3AE7630223846BAD0034BE04 /* books.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE7630123846BAD0034BE04 /* books.jpg */; };
+		3AE7630423846DDF0034BE04 /* ClothingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7630323846DDF0034BE04 /* ClothingTableViewController.swift */; };
+		3AE76307238478110034BE04 /* gap.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE76306238478100034BE04 /* gap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1407352384A976006DCD85 /* HnM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HnM.png; sourceTree = "<group>"; };
+		3A1407372384A9ED006DCD85 /* hollister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hollister.png; sourceTree = "<group>"; };
 		3AE762B3238359820034BE04 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE762B6238359820034BE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE762B8238359820034BE04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 		3AE762FB23846A140034BE04 /* electronics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electronics.png; sourceTree = "<group>"; };
 		3AE762FF23846AB50034BE04 /* footwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = footwear.jpg; sourceTree = "<group>"; };
 		3AE7630123846BAD0034BE04 /* books.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = books.jpg; sourceTree = "<group>"; };
+		3AE7630323846DDF0034BE04 /* ClothingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingTableViewController.swift; sourceTree = "<group>"; };
+		3AE76306238478100034BE04 /* gap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gap.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,7 @@
 				3AE762CE2383690D0034BE04 /* NavigationDrawerTableViewController.swift */,
 				3AE762D02383695E0034BE04 /* ContainerViewController.swift */,
 				3AE762D22383A0700034BE04 /* CategoriesViewController.swift */,
+				3AE7630323846DDF0034BE04 /* ClothingTableViewController.swift */,
 			);
 			path = SmartShopper;
 			sourceTree = "<group>";
@@ -94,7 +103,10 @@
 			children = (
 				3AE7630123846BAD0034BE04 /* books.jpg */,
 				3AE762FB23846A140034BE04 /* electronics.png */,
+				3A1407352384A976006DCD85 /* HnM.png */,
 				3AE762F523846A020034BE04 /* shopping.png */,
+				3AE76306238478100034BE04 /* gap.png */,
+				3A1407372384A9ED006DCD85 /* hollister.png */,
 				3AE762F923846A0E0034BE04 /* cloth.jpg */,
 				3AE762FF23846AB50034BE04 /* footwear.jpg */,
 				3AE762F723846A080034BE04 /* smartShopper.jpg */,
@@ -160,6 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE76307238478110034BE04 /* gap.png in Resources */,
+				3A1407382384A9ED006DCD85 /* hollister.png in Resources */,
 				3AE762C3238359830034BE04 /* LaunchScreen.storyboard in Resources */,
 				3AE762BE238359820034BE04 /* Main.storyboard in Resources */,
 				3AE7630023846AB50034BE04 /* footwear.jpg in Resources */,
@@ -168,6 +182,7 @@
 				3AE762F823846A080034BE04 /* smartShopper.jpg in Resources */,
 				3AE7630223846BAD0034BE04 /* books.jpg in Resources */,
 				3AE762FC23846A140034BE04 /* electronics.png in Resources */,
+				3A1407362384A976006DCD85 /* HnM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE762BB238359820034BE04 /* ViewController.swift in Sources */,
+				3AE7630423846DDF0034BE04 /* ClothingTableViewController.swift in Sources */,
 				3AE762CB23835CF00034BE04 /* customerStructure.swift in Sources */,
 				3AE762B7238359820034BE04 /* AppDelegate.swift in Sources */,
 				3AE762CF2383690D0034BE04 /* NavigationDrawerTableViewController.swift in Sources */,
