@@ -371,6 +371,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="c8k-U4-rBc" kind="show" id="Zch-kW-Lw9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -383,6 +386,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iga-sf-ymj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3592.753623188406" y="613.85869565217399"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mfI-gi-cGQ">
+            <objects>
+                <viewController id="c8k-U4-rBc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHz-ip-crj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DKh-Gh-3xB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mfv-2u-2Kl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfT-5z-CJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4351" y="610"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QnG-In-gKC">
