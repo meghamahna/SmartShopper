@@ -91,6 +91,9 @@ class ViewController: UIViewController {
                         
                         }
                    }
+                    usernameText.text = nil
+                    passwordText.text = nil
+                    emailText.text = nil
                   
             }
     }
