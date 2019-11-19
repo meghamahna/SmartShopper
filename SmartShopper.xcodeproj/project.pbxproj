@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A1407362384A976006DCD85 /* HnM.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407352384A976006DCD85 /* HnM.png */; };
 		3A1407382384A9ED006DCD85 /* hollister.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407372384A9ED006DCD85 /* hollister.png */; };
+		3A14073A2384AB91006DCD85 /* WebEmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1407392384AB91006DCD85 /* WebEmbedViewController.swift */; };
+		3A14073C2384AEFF006DCD85 /* ClothingWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14073B2384AEFF006DCD85 /* ClothingWebViewController.swift */; };
 		3AE762B7238359820034BE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B6238359820034BE04 /* AppDelegate.swift */; };
 		3AE762B9238359820034BE04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B8238359820034BE04 /* SceneDelegate.swift */; };
 		3AE762BB238359820034BE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762BA238359820034BE04 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		3A1407352384A976006DCD85 /* HnM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HnM.png; sourceTree = "<group>"; };
 		3A1407372384A9ED006DCD85 /* hollister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hollister.png; sourceTree = "<group>"; };
+		3A1407392384AB91006DCD85 /* WebEmbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebEmbedViewController.swift; sourceTree = "<group>"; };
+		3A14073B2384AEFF006DCD85 /* ClothingWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingWebViewController.swift; sourceTree = "<group>"; };
 		3AE762B3238359820034BE04 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE762B6238359820034BE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE762B8238359820034BE04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				3AE762D02383695E0034BE04 /* ContainerViewController.swift */,
 				3AE762D22383A0700034BE04 /* CategoriesViewController.swift */,
 				3AE7630323846DDF0034BE04 /* ClothingTableViewController.swift */,
+				3A1407392384AB91006DCD85 /* WebEmbedViewController.swift */,
+				3A14073B2384AEFF006DCD85 /* ClothingWebViewController.swift */,
 			);
 			path = SmartShopper;
 			sourceTree = "<group>";
@@ -194,9 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE762BB238359820034BE04 /* ViewController.swift in Sources */,
+				3A14073A2384AB91006DCD85 /* WebEmbedViewController.swift in Sources */,
 				3AE7630423846DDF0034BE04 /* ClothingTableViewController.swift in Sources */,
 				3AE762CB23835CF00034BE04 /* customerStructure.swift in Sources */,
 				3AE762B7238359820034BE04 /* AppDelegate.swift in Sources */,
+				3A14073C2384AEFF006DCD85 /* ClothingWebViewController.swift in Sources */,
 				3AE762CF2383690D0034BE04 /* NavigationDrawerTableViewController.swift in Sources */,
 				3AE762D12383695E0034BE04 /* ContainerViewController.swift in Sources */,
 				3AE762D32383A0700034BE04 /* CategoriesViewController.swift in Sources */,

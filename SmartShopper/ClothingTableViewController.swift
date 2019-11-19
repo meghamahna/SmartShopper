@@ -10,6 +10,7 @@ import UIKit
 
 class ClothingTableViewController: UITableViewController {
     var clothingData: [(name: String, url: String)]?
+    var currentIndex = -1
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -85,15 +86,24 @@ class ClothingTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let detailView = segue.destination as? WebEmbedViewController
+        detailView!.clothDelegate = self
+        if let tableviewcell = sender as? UITableViewCell{
+            if let index = tableView.indexPath(for: tableviewcell)?.row{
+                currentIndex = index
+            }
+        }
+        
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }

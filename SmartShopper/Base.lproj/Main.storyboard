@@ -387,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="3592.753623188406" y="613.85869565217399"/>
         </scene>
-        <!--View Controller-->
+        <!--Clothing Web View Controller-->
         <scene sceneID="mfI-gi-cGQ">
             <objects>
-                <viewController id="c8k-U4-rBc" sceneMemberID="viewController">
+                <viewController id="c8k-U4-rBc" customClass="ClothingWebViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fHz-ip-crj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
