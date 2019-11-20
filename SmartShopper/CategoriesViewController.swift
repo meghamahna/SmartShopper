@@ -30,7 +30,7 @@ class CategoriesViewController: UIViewController {
     @IBOutlet weak var electronicsLabel: UILabel!
     @IBOutlet weak var booksLabel: UILabel!
     
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         containerView.isHidden = true
         clothingImage.isHidden = false
@@ -46,11 +46,43 @@ class CategoriesViewController: UIViewController {
         booksLabel.isHidden = false
         booksButton.isHidden = false
         // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showHome), name: NSNotification.Name("showHome"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showContact), name: NSNotification.Name("showContact"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showFeedback), name: NSNotification.Name("showFeedback"), object: nil)
+         NotificationCenter.default.addObserver(self, selector: #selector(showLogout), name: NSNotification.Name("showLogout"), object: nil)
+        
+        
     }
     
     @IBAction func onMoreTapped(){
         print("toggle side menu")
         NotificationCenter.default.post(name: NSNotification.Name("navigationMenu"), object: nil)
+    }
+    
+   
+
+    @objc func showContact(){
+        
+        performSegue(withIdentifier: "showContact", sender: nil)
+           
+    }
+    
+    @objc func showHome(){
+           
+           performSegue(withIdentifier: "showHome", sender: nil)
+              
+       }
+    @objc func showFeedback(){
+        
+        performSegue(withIdentifier: "showFeedback", sender: nil)
+              
+    }
+    
+    @objc func showLogout(){
+        
+        performSegue(withIdentifier: "showLogout", sender: nil)
+           
     }
 
     @IBAction func segmentControl(_ sender: UISegmentedControl) {

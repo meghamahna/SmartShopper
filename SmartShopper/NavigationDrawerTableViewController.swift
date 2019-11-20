@@ -12,6 +12,18 @@ class NavigationDrawerTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        
+        NotificationCenter.default.post(name: NSNotification.Name("navigationMenu"), object: nil)
+        
+        switch indexPath.row{
+           
+            case 0: NotificationCenter.default.post(name: NSNotification.Name("showHome"), object: nil)
+            case 1: NotificationCenter.default.post(name: NSNotification.Name("showContact"), object: nil)
+            case 2: NotificationCenter.default.post(name: NSNotification.Name("showFeedback"), object: nil)
+            case 3: NotificationCenter.default.post(name: NSNotification.Name("showLogout"), object: nil)
+            default: break
+            
+        }
     }
 
 //    override func viewDidLoad() {

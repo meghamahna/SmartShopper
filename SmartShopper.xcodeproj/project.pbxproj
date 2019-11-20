@@ -25,7 +25,7 @@
 		3A14075A2385C5DB006DCD85 /* BooksWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1407592385C5DB006DCD85 /* BooksWebViewController.swift */; };
 		3A14075C2385C6DA006DCD85 /* kobo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A14075B2385C6DA006DCD85 /* kobo.png */; };
 		3A1407602385C6E6006DCD85 /* thriftbooks.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A14075F2385C6E6006DCD85 /* thriftbooks.png */; };
-		3A1407622385C82C006DCD85 /* overdrive.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407612385C82C006DCD85 /* overdrive.png */; };
+		3A1407642385DE0E006DCD85 /* overdrive.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407632385DE0E006DCD85 /* overdrive.png */; };
 		3AE762B7238359820034BE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B6238359820034BE04 /* AppDelegate.swift */; };
 		3AE762B9238359820034BE04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B8238359820034BE04 /* SceneDelegate.swift */; };
 		3AE762BB238359820034BE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762BA238359820034BE04 /* ViewController.swift */; };
@@ -63,7 +63,7 @@
 		3A1407592385C5DB006DCD85 /* BooksWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksWebViewController.swift; sourceTree = "<group>"; };
 		3A14075B2385C6DA006DCD85 /* kobo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kobo.png; sourceTree = "<group>"; };
 		3A14075F2385C6E6006DCD85 /* thriftbooks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thriftbooks.png; sourceTree = "<group>"; };
-		3A1407612385C82C006DCD85 /* overdrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overdrive.png; sourceTree = "<group>"; };
+		3A1407632385DE0E006DCD85 /* overdrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overdrive.png; sourceTree = "<group>"; };
 		3AE762B3238359820034BE04 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE762B6238359820034BE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE762B8238359820034BE04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,10 +150,10 @@
 				3A14074B2384CA68006DCD85 /* sketchers.png */,
 				3A1407532385C257006DCD85 /* newegg.png */,
 				3A14075F2385C6E6006DCD85 /* thriftbooks.png */,
+				3A1407632385DE0E006DCD85 /* overdrive.png */,
 				3A1407472384C8E8006DCD85 /* timberland.png */,
 				3AE76306238478100034BE04 /* gap.png */,
 				3A1407552385C25F006DCD85 /* slickdeals.png */,
-				3A1407612385C82C006DCD85 /* overdrive.png */,
 				3A1407372384A9ED006DCD85 /* hollister.png */,
 				3AE762F923846A0E0034BE04 /* cloth.jpg */,
 				3AE762FF23846AB50034BE04 /* footwear.jpg */,
@@ -230,7 +230,7 @@
 				3A14074C2384CA68006DCD85 /* sketchers.png in Resources */,
 				3AE762BE238359820034BE04 /* Main.storyboard in Resources */,
 				3A1407522385C250006DCD85 /* techbargains.png in Resources */,
-				3A1407622385C82C006DCD85 /* overdrive.png in Resources */,
+				3A1407642385DE0E006DCD85 /* overdrive.png in Resources */,
 				3AE7630023846AB50034BE04 /* footwear.jpg in Resources */,
 				3AE762FA23846A0E0034BE04 /* cloth.jpg in Resources */,
 				3AE762F823846A080034BE04 /* smartShopper.jpg in Resources */,
