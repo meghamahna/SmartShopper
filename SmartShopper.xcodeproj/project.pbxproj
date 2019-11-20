@@ -21,6 +21,7 @@
 		3A1407522385C250006DCD85 /* techbargains.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407512385C250006DCD85 /* techbargains.png */; };
 		3A1407542385C257006DCD85 /* newegg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407532385C257006DCD85 /* newegg.png */; };
 		3A1407562385C25F006DCD85 /* slickdeals.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407552385C25F006DCD85 /* slickdeals.png */; };
+		3A1407582385C420006DCD85 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1407572385C420006DCD85 /* BooksTableViewController.swift */; };
 		3AE762B7238359820034BE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B6238359820034BE04 /* AppDelegate.swift */; };
 		3AE762B9238359820034BE04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B8238359820034BE04 /* SceneDelegate.swift */; };
 		3AE762BB238359820034BE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762BA238359820034BE04 /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 		3A1407512385C250006DCD85 /* techbargains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = techbargains.png; sourceTree = "<group>"; };
 		3A1407532385C257006DCD85 /* newegg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newegg.png; sourceTree = "<group>"; };
 		3A1407552385C25F006DCD85 /* slickdeals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slickdeals.png; sourceTree = "<group>"; };
+		3A1407572385C420006DCD85 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 		3AE762B3238359820034BE04 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE762B6238359820034BE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE762B8238359820034BE04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				3A1407412384C4BC006DCD85 /* footwearWebViewController.swift */,
 				3A14074D2385C003006DCD85 /* ElectronicsTableViewController.swift */,
 				3A14074F2385C098006DCD85 /* ElectronicsWebViewController.swift */,
+				3A1407572385C420006DCD85 /* BooksTableViewController.swift */,
 			);
 			path = SmartShopper;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				3A1407502385C098006DCD85 /* ElectronicsWebViewController.swift in Sources */,
 				3AE762BB238359820034BE04 /* ViewController.swift in Sources */,
+				3A1407582385C420006DCD85 /* BooksTableViewController.swift in Sources */,
 				3A14074E2385C003006DCD85 /* ElectronicsTableViewController.swift in Sources */,
 				3AE7630423846DDF0034BE04 /* ClothingTableViewController.swift in Sources */,
 				3A1407402384C245006DCD85 /* FootwearTableViewController.swift in Sources */,
