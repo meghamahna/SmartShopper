@@ -447,16 +447,16 @@
             </objects>
             <point key="canvasLocation" x="3031" y="1429"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Books Table View Controller-->
         <scene sceneID="D78-qv-nYg">
             <objects>
-                <tableViewController id="6AI-Ml-X38" sceneMemberID="viewController">
+                <tableViewController id="6AI-Ml-X38" customClass="BooksTableViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x0a-az-tgj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mzg-Kc-RTJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="book" id="mzg-Kc-RTJ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mzg-Kc-RTJ" id="JDp-as-SeP">
@@ -479,10 +479,10 @@
             </objects>
             <point key="canvasLocation" x="4135" y="1812"/>
         </scene>
-        <!--View Controller-->
+        <!--Books Web View Controller-->
         <scene sceneID="1qG-le-PJq">
             <objects>
-                <viewController id="HKU-Dh-LLa" sceneMemberID="viewController">
+                <viewController id="HKU-Dh-LLa" customClass="BooksWebViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gEc-hv-heb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
