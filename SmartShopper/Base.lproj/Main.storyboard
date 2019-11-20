@@ -390,22 +390,22 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iga-sf-ymj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4530.3999999999996" y="613.04347826086962"/>
+            <point key="canvasLocation" x="4479" y="285"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Electronics Table View Controller-->
         <scene sceneID="wJB-It-Sso">
             <objects>
-                <tableViewController id="QFQ-o5-cx2" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="66A-3H-Vyd">
+                <tableViewController id="QFQ-o5-cx2" customClass="ElectronicsTableViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="66A-3H-Vyd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="electronic" id="9Yj-5r-gC2">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Yj-5r-gC2" id="al8-Ho-dpS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -422,12 +422,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjE-cM-kc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="1432"/>
+            <point key="canvasLocation" x="2306" y="1429"/>
         </scene>
-        <!--View Controller-->
+        <!--Electronics Web View Controller-->
         <scene sceneID="ldm-kQ-3GE">
             <objects>
-                <viewController id="8RD-fn-m83" sceneMemberID="viewController">
+                <viewController id="8RD-fn-m83" customClass="ElectronicsWebViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SIc-n7-7WF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ph-5l-nms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3636" y="1432"/>
+            <point key="canvasLocation" x="3031" y="1429"/>
         </scene>
         <!--Footwear Table View Controller-->
         <scene sceneID="qp5-MK-S8n">
@@ -470,7 +470,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0h-LN-4zB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4530" y="1340"/>
+            <point key="canvasLocation" x="4503" y="984"/>
         </scene>
         <!--Footwear Web View Controller-->
         <scene sceneID="oaP-ep-xF6">
@@ -486,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCd-WG-now" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5327" y="1330"/>
+            <point key="canvasLocation" x="5274" y="984"/>
         </scene>
         <!--Clothing Web View Controller-->
         <scene sceneID="mfI-gi-cGQ">
@@ -502,7 +502,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfT-5z-CJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5288.8000000000002" y="609.44527736131943"/>
+            <point key="canvasLocation" x="5191" y="285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ctr-Dw-3kf">

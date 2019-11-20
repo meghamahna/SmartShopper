@@ -18,6 +18,9 @@
 		3A14074C2384CA68006DCD85 /* sketchers.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A14074B2384CA68006DCD85 /* sketchers.png */; };
 		3A14074E2385C003006DCD85 /* ElectronicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14074D2385C003006DCD85 /* ElectronicsTableViewController.swift */; };
 		3A1407502385C098006DCD85 /* ElectronicsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14074F2385C098006DCD85 /* ElectronicsWebViewController.swift */; };
+		3A1407522385C250006DCD85 /* techbargains.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407512385C250006DCD85 /* techbargains.png */; };
+		3A1407542385C257006DCD85 /* newegg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407532385C257006DCD85 /* newegg.png */; };
+		3A1407562385C25F006DCD85 /* slickdeals.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407552385C25F006DCD85 /* slickdeals.png */; };
 		3AE762B7238359820034BE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B6238359820034BE04 /* AppDelegate.swift */; };
 		3AE762B9238359820034BE04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762B8238359820034BE04 /* SceneDelegate.swift */; };
 		3AE762BB238359820034BE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE762BA238359820034BE04 /* ViewController.swift */; };
@@ -48,6 +51,9 @@
 		3A14074B2384CA68006DCD85 /* sketchers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sketchers.png; sourceTree = "<group>"; };
 		3A14074D2385C003006DCD85 /* ElectronicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectronicsTableViewController.swift; sourceTree = "<group>"; };
 		3A14074F2385C098006DCD85 /* ElectronicsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectronicsWebViewController.swift; sourceTree = "<group>"; };
+		3A1407512385C250006DCD85 /* techbargains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = techbargains.png; sourceTree = "<group>"; };
+		3A1407532385C257006DCD85 /* newegg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newegg.png; sourceTree = "<group>"; };
+		3A1407552385C25F006DCD85 /* slickdeals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slickdeals.png; sourceTree = "<group>"; };
 		3AE762B3238359820034BE04 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE762B6238359820034BE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE762B8238359820034BE04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,10 +132,13 @@
 				3AE762FB23846A140034BE04 /* electronics.png */,
 				3A1407352384A976006DCD85 /* HnM.png */,
 				3A14073D2384B09E006DCD85 /* shopping.png */,
+				3A1407512385C250006DCD85 /* techbargains.png */,
 				3A1407492384CA07006DCD85 /* footlocker.png */,
 				3A14074B2384CA68006DCD85 /* sketchers.png */,
+				3A1407532385C257006DCD85 /* newegg.png */,
 				3A1407472384C8E8006DCD85 /* timberland.png */,
 				3AE76306238478100034BE04 /* gap.png */,
+				3A1407552385C25F006DCD85 /* slickdeals.png */,
 				3A1407372384A9ED006DCD85 /* hollister.png */,
 				3AE762F923846A0E0034BE04 /* cloth.jpg */,
 				3AE762FF23846AB50034BE04 /* footwear.jpg */,
@@ -196,15 +205,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1407562385C25F006DCD85 /* slickdeals.png in Resources */,
 				3AE76307238478110034BE04 /* gap.png in Resources */,
 				3A14074A2384CA07006DCD85 /* footlocker.png in Resources */,
 				3A1407382384A9ED006DCD85 /* hollister.png in Resources */,
 				3AE762C3238359830034BE04 /* LaunchScreen.storyboard in Resources */,
 				3A14074C2384CA68006DCD85 /* sketchers.png in Resources */,
 				3AE762BE238359820034BE04 /* Main.storyboard in Resources */,
+				3A1407522385C250006DCD85 /* techbargains.png in Resources */,
 				3AE7630023846AB50034BE04 /* footwear.jpg in Resources */,
 				3AE762FA23846A0E0034BE04 /* cloth.jpg in Resources */,
 				3AE762F823846A080034BE04 /* smartShopper.jpg in Resources */,
+				3A1407542385C257006DCD85 /* newegg.png in Resources */,
 				3AE7630223846BAD0034BE04 /* books.jpg in Resources */,
 				3AE762FC23846A140034BE04 /* electronics.png in Resources */,
 				3A1407362384A976006DCD85 /* HnM.png in Resources */,
