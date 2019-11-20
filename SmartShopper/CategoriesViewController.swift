@@ -10,17 +10,86 @@ import UIKit
 
 class CategoriesViewController: UIViewController {
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var containerView: UIView!
+   
+    @IBOutlet weak var clothingButton: UIButton!
+    @IBOutlet weak var clothingImage: UIImageView!
+    @IBOutlet weak var footwearButton: UIButton!
+    @IBOutlet weak var footwearImage: UIButton!
+    
+    @IBOutlet weak var electronicsButton: UIButton!
+    @IBOutlet weak var electronicsImage: UIImageView!
+    
+    @IBOutlet weak var booksImage: UIImageView!
+    
+    @IBOutlet weak var booksButton: UIButton!
+    
+    @IBOutlet weak var clothingLabel: UILabel!
+    @IBOutlet weak var footwearLabel: UILabel!
+    @IBOutlet weak var electronicsLabel: UILabel!
+    @IBOutlet weak var booksLabel: UILabel!
+    
+        override func viewDidLoad() {
+        super.viewDidLoad()
+        containerView.isHidden = true
+        clothingImage.isHidden = false
+        clothingLabel.isHidden = false
+        clothingButton.isHidden = false
+        footwearImage.isHidden = false
+        footwearLabel.isHidden = false
+        footwearButton.isHidden = false
+        electronicsLabel.isHidden = false
+        electronicsImage.isHidden = false
+        electronicsButton.isHidden = false
+        booksImage.isHidden = false
+        booksLabel.isHidden = false
+        booksButton.isHidden = false
+        // Do any additional setup after loading the view.
+    }
     
     @IBAction func onMoreTapped(){
         print("toggle side menu")
         NotificationCenter.default.post(name: NSNotification.Name("navigationMenu"), object: nil)
     }
 
+    @IBAction func segmentControl(_ sender: UISegmentedControl) {
+        
+        let value = sender.selectedSegmentIndex
+        if value == 0{
+            containerView.isHidden = true
+            clothingImage.isHidden = false
+            clothingLabel.isHidden = false
+            clothingButton.isHidden = false
+            footwearImage.isHidden = false
+            footwearLabel.isHidden = false
+            footwearButton.isHidden = false
+            electronicsLabel.isHidden = false
+            electronicsImage.isHidden = false
+            electronicsButton.isHidden = false
+            booksImage.isHidden = false
+            booksLabel.isHidden = false
+            booksButton.isHidden = false
+        }
+        
+        else if value == 1{
+            clothingImage.isHidden = true
+            clothingLabel.isHidden = true
+            clothingButton.isHidden = true
+            footwearImage.isHidden = true
+            footwearLabel.isHidden = true
+            footwearButton.isHidden = true
+            electronicsLabel.isHidden = true
+            electronicsImage.isHidden = true
+            electronicsButton.isHidden = true
+            booksImage.isHidden = true
+            booksLabel.isHidden = true
+            booksButton.isHidden = true
+            containerView.isHidden = false
+        }
+        
+        
+    }
     /*
     // MARK: - Navigation
 
