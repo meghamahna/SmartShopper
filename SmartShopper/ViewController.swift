@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var clickButton: UIButton!
+    
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
@@ -34,6 +36,7 @@ class ViewController: UIViewController {
         loginButton.isHidden = false
         signupButton.isHidden = true
         shoppingImage.isHidden = true
+        clickButton.isHidden = true
         
         // Do any additional setup after loading the view.
     }
@@ -49,6 +52,7 @@ class ViewController: UIViewController {
                    loginButton.isHidden = false
                    signupButton.isHidden = true
                    shoppingImage.isHidden = true
+                   clickButton.isHidden = true
                }
                
                else{
@@ -61,6 +65,7 @@ class ViewController: UIViewController {
                    loginButton.isHidden = true
                    signupButton.isHidden = false
                    shoppingImage.isHidden = true
+                   clickButton.isHidden = true
                }
     }
     
@@ -80,6 +85,7 @@ class ViewController: UIViewController {
                            signupButton.isHidden = true
                            shoppingImage.isHidden = false
                            segmentControl.isHidden = true
+                           clickButton.isHidden = false
                            alertController1.addAction(okAction)
                            self.present(alertController1, animated: true, completion: nil)
                        }

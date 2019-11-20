@@ -92,7 +92,7 @@ class ClothingTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let detailView = segue.destination as? WebEmbedViewController
+        let detailView = segue.destination as? ClothingWebViewController
         detailView!.clothDelegate = self
         if let tableviewcell = sender as? UITableViewCell{
             if let index = tableView.indexPath(for: tableviewcell)?.row{

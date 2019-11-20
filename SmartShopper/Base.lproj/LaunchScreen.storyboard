@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smartShopper" translatesAutoresizingMaskIntoConstraints="NO" id="NE3-PY-GOE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smartShopper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NE3-PY-GOE">
                                 <rect key="frame" x="52" y="206" width="310" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -30,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="smartShopper" width="350" height="280"/>
+        <image name="smartShopper.jpg" width="350" height="280"/>
     </resources>
 </document>

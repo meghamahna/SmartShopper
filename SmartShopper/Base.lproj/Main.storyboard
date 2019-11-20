@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dWl-XD-7xc">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hL0-xL-P7O">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="hL0-xL-P7O" customClass="ViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIW-Y3-yvr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smartShopper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6ia-dj-X9G">
@@ -70,7 +70,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bU-sw-WqO">
-                                <rect key="frame" x="175" y="692" width="67" height="46"/>
+                                <rect key="frame" x="167" y="558" width="67" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Login"/>
@@ -83,12 +83,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-GO-WoI">
-                                <rect key="frame" x="161" y="761" width="96" height="46"/>
+                                <rect key="frame" x="159" y="612" width="96" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signupButton:" destination="hL0-xL-P7O" eventType="touchUpInside" id="8rG-0I-KZC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIV-TB-2aR">
+                                <rect key="frame" x="89" y="271" width="209" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="dWl-XD-7xc" kind="presentation" id="put-Q3-Sdr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,6 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bQv-4c-VXg"/>
                     <connections>
+                        <outlet property="clickButton" destination="wIV-TB-2aR" id="vrH-dQ-jFe"/>
                         <outlet property="emailLabel" destination="RNs-gD-Qih" id="xAp-Nk-1Rx"/>
                         <outlet property="emailText" destination="iDJ-Ov-NKv" id="e47-Uh-Ofj"/>
                         <outlet property="loginButton" destination="9bU-sw-WqO" id="2dl-bp-7wo"/>
@@ -111,18 +119,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUo-h2-zsX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="-68"/>
+            <point key="canvasLocation" x="1265" y="-250"/>
         </scene>
         <!--Container View Controller-->
         <scene sceneID="d1u-8W-izM">
             <objects>
-                <viewController id="dWl-XD-7xc" customClass="ContainerViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="dWl-XD-7xc" customClass="ContainerViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dzn-Iw-qnt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smv-gg-Zid">
-                                <rect key="frame" x="-240" y="0.0" width="240" height="736"/>
+                                <rect key="frame" x="-240" y="0.0" width="240" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="nX5-Cd-c1k"/>
                                 </constraints>
@@ -131,13 +139,13 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysf-oO-rUm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="CIo-5J-FH1"/>
                                     <constraint firstAttribute="height" constant="736" id="OBE-Be-Do9"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="HBc-SA-by3" kind="embed" id="TRs-yq-rNo"/>
+                                    <segue destination="HG0-c0-pGG" kind="embed" id="ezk-F5-GhN"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -154,20 +162,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ei0-qj-fxV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PDH-L3-me5"/>
                     <connections>
                         <outlet property="navigationDrawerConstraint" destination="phI-Nd-qm5" id="qDi-jd-xjN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2b-Qk-fZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1291" y="-111"/>
+            <point key="canvasLocation" x="2184.8000000000002" y="-249.62518740629687"/>
         </scene>
         <!--Navigation Drawer Table View Controller-->
         <scene sceneID="PQf-us-3UV">
             <objects>
                 <tableViewController id="tpy-i8-dd0" customClass="NavigationDrawerTableViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="vwd-EZ-nsH">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
@@ -254,30 +263,12 @@
             </objects>
             <point key="canvasLocation" x="1070" y="614"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="26G-Jw-rTn">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Q5-1L-THR" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EnO-eq-E0d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="hL0-xL-P7O" kind="relationship" relationship="rootViewController" id="K1d-On-M7z"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zTX-gX-wUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-392.75362318840581" y="19.419642857142858"/>
-        </scene>
         <!--Categories-->
         <scene sceneID="yEp-IP-9op">
             <objects>
-                <viewController id="yez-i4-Uho" customClass="CategoriesViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="yez-i4-Uho" customClass="CategoriesViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N3g-eE-fjC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K8d-lr-hwG">
@@ -339,6 +330,13 @@
                                     <segue destination="soc-Gy-wJb" kind="show" id="Nkd-DR-dbR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chE-jE-lNh">
+                                <rect key="frame" x="219" y="142" width="140" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="aO3-iE-zoJ" kind="show" id="Xqf-dB-BVt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fDH-E9-9OV"/>
@@ -353,22 +351,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUl-Cv-wmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2781.1594202898555" y="613.85869565217399"/>
+            <point key="canvasLocation" x="3719.1999999999998" y="613.04347826086962"/>
         </scene>
         <!--Clothing Table View Controller-->
         <scene sceneID="mdY-eu-Jw1">
             <objects>
                 <tableViewController id="soc-Gy-wJb" customClass="ClothingTableViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AC4-7H-6rG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloth" rowHeight="43.666667938232422" id="tcW-1a-1rY">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tcW-1a-1rY" id="lFg-Bn-WCm">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -385,14 +383,62 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iga-sf-ymj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3592.753623188406" y="613.85869565217399"/>
+            <point key="canvasLocation" x="4530.3999999999996" y="613.04347826086962"/>
+        </scene>
+        <!--Footwear Table View Controller-->
+        <scene sceneID="qp5-MK-S8n">
+            <objects>
+                <tableViewController id="aO3-iE-zoJ" customClass="FootwearTableViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gm8-cc-MKz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="footwear" id="NBu-eV-nYU">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NBu-eV-nYU" id="L6o-vy-6a4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="E1p-TY-HnT" kind="show" id="nPG-LY-WLX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aO3-iE-zoJ" id="Fex-I3-Ykg"/>
+                            <outlet property="delegate" destination="aO3-iE-zoJ" id="Xog-Wf-laQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="9Rv-gZ-fVb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V0h-LN-4zB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4530" y="1340"/>
+        </scene>
+        <!--Footwear Web View Controller-->
+        <scene sceneID="oaP-ep-xF6">
+            <objects>
+                <viewController id="E1p-TY-HnT" customClass="footwearWebViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cR8-mQ-Ksf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CI7-ze-VVg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X0z-hg-UyU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCd-WG-now" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5327" y="1330"/>
         </scene>
         <!--Clothing Web View Controller-->
         <scene sceneID="mfI-gi-cGQ">
             <objects>
                 <viewController id="c8k-U4-rBc" customClass="ClothingWebViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fHz-ip-crj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DKh-Gh-3xB"/>
@@ -401,25 +447,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfT-5z-CJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4351" y="610"/>
+            <point key="canvasLocation" x="5288.8000000000002" y="609.44527736131943"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="QnG-In-gKC">
+        <scene sceneID="Ctr-Dw-3kf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HBc-SA-by3" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HG0-c0-pGG" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U8y-Rf-zj9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Kl-X3-bQA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="yez-i4-Uho" kind="relationship" relationship="rootViewController" id="JH7-jp-4sp"/>
+                        <segue destination="yez-i4-Uho" kind="relationship" relationship="rootViewController" id="eEI-iZ-NYJ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C1L-14-e8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdY-cA-KhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873.913043478261" y="613.85869565217399"/>
+            <point key="canvasLocation" x="2780" y="613.04347826086962"/>
         </scene>
     </scenes>
     <resources>
