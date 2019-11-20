@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    // Audio is played when user succesfully login the account
+    var audioPlayer: AVAudioPlayer!
+    let sounds = ["Entire"]
     @IBOutlet weak var clickButton: UIButton!
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -69,6 +73,7 @@ class ViewController: UIViewController {
                }
     }
     
+    //Functionality of Login Button
     @IBAction func loginButton(_ sender: UIButton) {
         if let username = usernameText.text, let password = passwordText.text{
                    for item in customers{
@@ -88,6 +93,10 @@ class ViewController: UIViewController {
                            clickButton.isHidden = false
                            alertController1.addAction(okAction)
                            self.present(alertController1, animated: true, completion: nil)
+                            let select = sounds[sender.tag]
+                            let soundURL = Bundle.main.url(forResource: select, withExtension: "wav")
+                            audioPlayer = try! AVAudioPlayer(contentsOf: soundURL!)
+                            audioPlayer.play()
                        }
                        else {
                         let alertController = UIAlertController(title: "ALERT", message: "Incorrect Username or Password", preferredStyle: .alert)
@@ -104,6 +113,7 @@ class ViewController: UIViewController {
             }
     }
     
+    //Functionality of Sign Up Button
     @IBAction func signupButton(_ sender: UIButton) {
         if let username = usernameText.text, let password = passwordText.text, let email = emailText.text{
              

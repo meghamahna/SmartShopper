@@ -8,6 +8,8 @@
 
 import UIKit
 
+//Categories Page containing categories like Clothing, Electronics, Footwear, and Books
+
 class CategoriesViewController: UIViewController {
 
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -32,6 +34,7 @@ class CategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = UIColor.systemGreen
         containerView.isHidden = true
         clothingImage.isHidden = false
         clothingLabel.isHidden = false
