@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var shoppingImage: UIImageView!
     
     
+    /// view did load function
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameLabel.isHidden = false
