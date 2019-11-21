@@ -87,7 +87,9 @@ class CategoriesViewController: UIViewController {
         performSegue(withIdentifier: "showLogout", sender: nil)
            
     }
-
+    
+    /// segment control function
+    /// - Parameter sender: uisegment
     @IBAction func segmentControl(_ sender: UISegmentedControl) {
         
         let value = sender.selectedSegmentIndex
