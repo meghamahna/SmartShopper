@@ -114,7 +114,7 @@ class ViewController: UIViewController {
             }
     }
     
-    //Functionality of Sign Up Button
+    //MARK: - Sign up button functionality and alert controller for sign up
     @IBAction func signupButton(_ sender: UIButton) {
         if let username = usernameText.text, let password = passwordText.text, let email = emailText.text{
              
