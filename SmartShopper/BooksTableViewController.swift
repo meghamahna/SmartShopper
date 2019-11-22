@@ -14,7 +14,7 @@ class BooksTableViewController: UITableViewController {
     var currentIndex = -1
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK: - URL for navigating to the book website
         bookData = [("kobo","https://www.kobo.com"),("overdrive","https://www.overdrive.com"), ("thriftbooks","https://www.thriftbooks.com")]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
