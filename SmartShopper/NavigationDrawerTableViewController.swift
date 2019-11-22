@@ -16,7 +16,7 @@ class NavigationDrawerTableViewController: UITableViewController {
         print(indexPath.row)
         
         NotificationCenter.default.post(name: NSNotification.Name("navigationMenu"), object: nil)
-        
+        //MARK:- Switch for navigation drawer's options
         switch indexPath.row{
            
             case 0: NotificationCenter.default.post(name: NSNotification.Name("showHome"), object: nil)
