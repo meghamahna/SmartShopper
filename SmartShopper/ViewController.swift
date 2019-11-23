@@ -114,6 +114,16 @@ class ViewController: UIViewController {
             }
     }
     
+    func passwordLength(password : String)-> Bool{
+        guard password != nil else{
+            return false}
+        if password.count >= 6 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
     
     func isemailvalidate(emailAdd : String) -> Bool {
         guard emailAdd != nil else { return false }
@@ -129,6 +139,8 @@ class ViewController: UIViewController {
     //MARK: - Sign up button functionality and alert controller for sign up
     @IBAction func signupButton(_ sender: UIButton) {
         if let username = usernameText.text, let password = passwordText.text, let email = emailText.text{
+            if passwordLength(password: password){
+            
             if isemailvalidate(emailAdd: email) {
             let customer = Customer(username: username, password: password, email: email)
              customers.append(customer)
@@ -143,13 +155,19 @@ class ViewController: UIViewController {
                     emailText.text = nil
          }
             else{
-                let alertController = UIAlertController(title: "Registration", message: "You have not entered email correctly", preferredStyle: .alert)
+                let alertController = UIAlertController(title: "Registration", message: "You have not entered email correctly .", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true, completion: nil)
             }
         
         }
+            else{
+                let alertController = UIAlertController(title: "Registration", message: "You have not entered Password correctly ,it should be atleast 6 characters", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
         
     }
     
@@ -159,3 +177,4 @@ class ViewController: UIViewController {
     
 }
 
+}
