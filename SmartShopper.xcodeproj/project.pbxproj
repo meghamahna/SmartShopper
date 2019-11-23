@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3A1407382384A9ED006DCD85 /* hollister.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407372384A9ED006DCD85 /* hollister.png */; };
 		3A14073C2384AEFF006DCD85 /* ClothingWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14073B2384AEFF006DCD85 /* ClothingWebViewController.swift */; };
-		3A14073E2384B09F006DCD85 /* shopping.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A14073D2384B09E006DCD85 /* shopping.png */; };
 		3A1407402384C245006DCD85 /* FootwearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14073F2384C245006DCD85 /* FootwearTableViewController.swift */; };
 		3A1407422384C4BC006DCD85 /* footwearWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1407412384C4BC006DCD85 /* footwearWebViewController.swift */; };
 		3A1407482384C8E8006DCD85 /* timberland.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1407472384C8E8006DCD85 /* timberland.png */; };
@@ -44,12 +43,12 @@
 		3AE7630023846AB50034BE04 /* footwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE762FF23846AB50034BE04 /* footwear.jpg */; };
 		3AE7630223846BAD0034BE04 /* books.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE7630123846BAD0034BE04 /* books.jpg */; };
 		3AE7630423846DDF0034BE04 /* ClothingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7630323846DDF0034BE04 /* ClothingTableViewController.swift */; };
+		8D0494CC2389F36E0064BD09 /* shopping.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D0494CB2389F36E0064BD09 /* shopping.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A1407372384A9ED006DCD85 /* hollister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hollister.png; sourceTree = "<group>"; };
 		3A14073B2384AEFF006DCD85 /* ClothingWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingWebViewController.swift; sourceTree = "<group>"; };
-		3A14073D2384B09E006DCD85 /* shopping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shopping.png; path = ../../../../shopping.png; sourceTree = "<group>"; };
 		3A14073F2384C245006DCD85 /* FootwearTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootwearTableViewController.swift; sourceTree = "<group>"; };
 		3A1407412384C4BC006DCD85 /* footwearWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footwearWebViewController.swift; sourceTree = "<group>"; };
 		3A1407472384C8E8006DCD85 /* timberland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timberland.png; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		3AE762FF23846AB50034BE04 /* footwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = footwear.jpg; sourceTree = "<group>"; };
 		3AE7630123846BAD0034BE04 /* books.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = books.jpg; sourceTree = "<group>"; };
 		3AE7630323846DDF0034BE04 /* ClothingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingTableViewController.swift; sourceTree = "<group>"; };
+		8D0494CB2389F36E0064BD09 /* shopping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +156,8 @@
 			children = (
 				3AE7630123846BAD0034BE04 /* books.jpg */,
 				3AE762FB23846A140034BE04 /* electronics.png */,
-				3A14073D2384B09E006DCD85 /* shopping.png */,
 				3A14075B2385C6DA006DCD85 /* kobo.png */,
+				8D0494CB2389F36E0064BD09 /* shopping.png */,
 				3A1407512385C250006DCD85 /* techbargains.png */,
 				3A1407722385FDF8006DCD85 /* HnM.png */,
 				3A1407492384CA07006DCD85 /* footlocker.png */,
@@ -239,6 +239,7 @@
 				3A1407752386020D006DCD85 /* Entire.wav in Resources */,
 				3A1407732385FDF9006DCD85 /* HnM.png in Resources */,
 				3A14074A2384CA07006DCD85 /* footlocker.png in Resources */,
+				8D0494CC2389F36E0064BD09 /* shopping.png in Resources */,
 				3A1407382384A9ED006DCD85 /* hollister.png in Resources */,
 				3AE762C3238359830034BE04 /* LaunchScreen.storyboard in Resources */,
 				3A14074C2384CA68006DCD85 /* sketchers.png in Resources */,
@@ -252,7 +253,6 @@
 				3A1407542385C257006DCD85 /* newegg.png in Resources */,
 				3AE7630223846BAD0034BE04 /* books.jpg in Resources */,
 				3AE762FC23846A140034BE04 /* electronics.png in Resources */,
-				3A14073E2384B09F006DCD85 /* shopping.png in Resources */,
 				3A1407682385F6C5006DCD85 /* gap.png in Resources */,
 				3A1407482384C8E8006DCD85 /* timberland.png in Resources */,
 			);
