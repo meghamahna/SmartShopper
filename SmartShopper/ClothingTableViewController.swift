@@ -14,6 +14,9 @@ class ClothingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        //MARK: - clotingdata
+        // this array shows one string for the brands in the cells of table view controller and other string goes to another view controller with the help of delegate as the form of url string.
         clothingData = [("gap","https://www.gapcanada.ca"),("hollister","https://www.hollisterco.com/shop/ca/sale"),("HnM","https://www2.hm.com/en_ca/index.html")]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -88,6 +91,7 @@ class ClothingTableViewController: UITableViewController {
 
     
     // MARK: - Navigation
+    //MARK: - prepare segue connection for delegate
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
