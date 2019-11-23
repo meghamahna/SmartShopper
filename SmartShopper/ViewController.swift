@@ -114,23 +114,48 @@ class ViewController: UIViewController {
             }
     }
     
+    
+    func isemailvalidate(emailAdd : String) -> Bool {
+        guard emailAdd != nil else { return false }
+        
+        let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        
+        let pred = NSPredicate(format:"SELF MATCHES %@", regEx)
+        return pred.evaluate(with: emailAdd)
+        
+        
+        
+    }
     //MARK: - Sign up button functionality and alert controller for sign up
     @IBAction func signupButton(_ sender: UIButton) {
         if let username = usernameText.text, let password = passwordText.text, let email = emailText.text{
-             
+            if isemailvalidate(emailAdd: email) {
             let customer = Customer(username: username, password: password, email: email)
              customers.append(customer)
-             
+            
+            let alertController = UIAlertController(title: "Registration", message: "You have been successfully Registered", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(okAction)
+                    self.present(alertController, animated: true, completion: nil)
+            
+            usernameText.text = nil
+                    passwordText.text = nil
+                    emailText.text = nil
          }
+            else{
+                let alertController = UIAlertController(title: "Registration", message: "You have not entered email correctly", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
         
-         usernameText.text = nil
-         passwordText.text = nil
-         emailText.text = nil
-         
-         let alertController = UIAlertController(title: "Registration", message: "You have been successfully Registered", preferredStyle: .alert)
-         let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-         alertController.addAction(okAction)
-         self.present(alertController, animated: true, completion: nil)
+        }
+        
     }
+    
+    
+    
+    
+    
 }
 
