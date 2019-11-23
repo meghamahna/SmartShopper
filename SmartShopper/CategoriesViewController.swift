@@ -50,6 +50,7 @@ class CategoriesViewController: UIViewController {
         booksButton.isHidden = false
         // Do any additional setup after loading the view.
         
+        //MARK: - observers for notification center
         NotificationCenter.default.addObserver(self, selector: #selector(showHome), name: NSNotification.Name("showHome"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showContact), name: NSNotification.Name("showContact"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showFeedback), name: NSNotification.Name("showFeedback"), object: nil)
@@ -57,7 +58,7 @@ class CategoriesViewController: UIViewController {
         
         
     }
-    
+    //MARK: - onMoreTapped
     @IBAction func onMoreTapped(){
         print("toggle side menu")
         NotificationCenter.default.post(name: NSNotification.Name("navigationMenu"), object: nil)
@@ -90,6 +91,8 @@ class CategoriesViewController: UIViewController {
     
     /// segment control function
     /// - Parameter sender: uisegment
+    //MARK: - segmentControl
+    // this allows the application to appear or disapper the widgets of view as per the value of segment control.
     @IBAction func segmentControl(_ sender: UISegmentedControl) {
         
         let value = sender.selectedSegmentIndex
