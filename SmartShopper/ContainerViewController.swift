@@ -11,7 +11,7 @@ import UIKit
 //Container view Fow navigation drawer
 
 class ContainerViewController: UIViewController {
-
+//MARK: - Navigationdrawer constraint
     @IBOutlet weak var navigationDrawerConstraint: NSLayoutConstraint!
     var sideMenuOpen = false
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class ContainerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    //MARK: - Navigationmenu
     @objc func navigationMenu(){
         if sideMenuOpen{
             sideMenuOpen = false
