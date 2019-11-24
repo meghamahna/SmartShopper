@@ -63,7 +63,8 @@ class CategoriesViewController: UIViewController {
         print("toggle side menu")
         NotificationCenter.default.post(name: NSNotification.Name("navigationMenu"), object: nil)
     }
-    
+   //MARK: - navigation drawer
+    //navigation drawer helps the user to navigate to different options according to wish/need the objective type function helps the user to access this functionality with the help of performSegue
    
 
     @objc func showContact(){
