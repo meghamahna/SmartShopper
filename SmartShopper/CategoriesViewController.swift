@@ -11,7 +11,7 @@ import UIKit
 //Categories Page containing categories like Clothing, Electronics, Footwear, and Books
 
 class CategoriesViewController: UIViewController {
-
+//MARK: - Weak variables outlets for different image , buttons and labels
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var containerView: UIView!
    
