@@ -42,8 +42,9 @@ class ViewController: UIViewController {
         signupButton.isHidden = true
         shoppingImage.isHidden = true
         clickButton.isHidden = true
-        
-        // Do any additional setup after loading the view.
+     //MARK: - segment control functions according to user's needs
+        //this functionality let the user to access two different pages of app one for registered user other for new user
+       
     }
     @IBAction func segmentControl(_ sender: UISegmentedControl) {
         let value = sender.selectedSegmentIndex
