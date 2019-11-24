@@ -8,7 +8,7 @@
 
 import UIKit
 
-//Navigation Drawer
+//MARK: -Table view controller for navigation drawer 
 
 class NavigationDrawerTableViewController: UITableViewController {
     
