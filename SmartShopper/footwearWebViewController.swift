@@ -5,7 +5,8 @@
 //  Created by Megha Mahna on 2019-11-19.
 //  Copyright © 2019 meghamahna. All rights reserved.
 //
-
+//MARK: - imported webkit
+//this is for using original websites's link to make it possible for user to access data with the use of WKNavigationDelegate
 import UIKit
 import WebKit
 
