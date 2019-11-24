@@ -11,7 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    // Audio is played when user succesfully login the account
+    //MARK: - audio player functionality added for beginning of the application
     var audioPlayer: AVAudioPlayer!
     let sounds = ["Entire"]
     @IBOutlet weak var clickButton: UIButton!
