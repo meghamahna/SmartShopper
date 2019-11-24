@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//MARK: - AVFoundation imported to support the functioning of audio player
 import AVFoundation
 
 class ViewController: UIViewController {
