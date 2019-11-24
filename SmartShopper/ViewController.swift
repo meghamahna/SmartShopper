@@ -75,6 +75,11 @@ class ViewController: UIViewController {
     }
     
     //Functionality of Login Button
+    //MARK: - login button
+    // this action needs username and password to enter in the shopping app.
+    // this action compares the username and password with array of customers.
+    //username and password sholud be corrected
+    //if they are not then it would return an alert to fill them correctly.
     @IBAction func loginButton(_ sender: UIButton) {
         if let username = usernameText.text, let password = passwordText.text{
                    for item in customers{
