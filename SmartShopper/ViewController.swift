@@ -119,6 +119,8 @@ class ViewController: UIViewController {
             }
     }
     
+    //MARK: - passwordLength
+    //this function validate the length of password string ,if it is less than 6 then it would return an alert about the length.
     func passwordLength(password : String)-> Bool{
         guard password != nil else{
             return false}
@@ -130,6 +132,9 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    //MARK: -isemailvalidate
+    //this function validate the characters of email string ,it should contain according the regex constant,if not then it would return an alert about that.
     func isemailvalidate(emailAdd : String) -> Bool {
         guard emailAdd != nil else { return false }
         
