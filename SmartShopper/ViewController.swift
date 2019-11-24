@@ -161,7 +161,9 @@ class ViewController: UIViewController {
             if isemailvalidate(emailAdd: email) {
             let customer = Customer(username: username, password: password, email: email)
              customers.append(customer)
-            
+            //MARK: - alert controller for user registration
+                //in these alert controllers firstly user register him/her and accordance to that alert will pop up that u have registered successfully
+                //other alert is for unsuccessful registration when the user have entered wrong password and email
             let alertController = UIAlertController(title: "Registration", message: "You have been successfully Registered", preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(okAction)
