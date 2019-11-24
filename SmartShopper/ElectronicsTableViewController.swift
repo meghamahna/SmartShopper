@@ -35,7 +35,7 @@ class ElectronicsTableViewController: UITableViewController {
         return electronicData!.count ?? 0
     }
 
-    
+    //MARK: - to access the data of electronics and the frame height width measurement
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "electronic")
