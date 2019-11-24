@@ -14,7 +14,8 @@ class FootwearTableViewController: UITableViewController {
        var currentIndex = -1
        override func viewDidLoad() {
            super.viewDidLoad()
-           
+           //MARK: - URL to navigate to the particular website of the brand
+        //with the help of URL the user will access the website by clicking on the logo of that brand and it will directly open up the original website
            footwearData = [("sketchers","https://www.skechers.com/en-ca/"),("timberland","https://www.timberland.ca"), ("footlocker","https://www.footlocker.ca")]
            // Uncomment the following line to preserve selection between presentations
            // self.clearsSelectionOnViewWillAppear = false
