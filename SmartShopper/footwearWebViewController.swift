@@ -23,7 +23,7 @@ class footwearWebViewController: UIViewController,WKNavigationDelegate  {
             view = myWebView
             
         }
-        
+        //MARK: - it will request the URL to open up the page of linked website with WebView
         override func viewDidLoad() {
             super.viewDidLoad()
             
