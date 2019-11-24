@@ -147,6 +147,11 @@ class ViewController: UIViewController {
         
     }
     //MARK: - Sign up button functionality and alert controller for sign up
+    //this action makes the user able to register himself/herself.
+    //when user not entered the textfields according to the validation it will give  an alert for that .
+    //password and Emial are validated .
+    //password should be atleast 6 characters and it is validated with the help of count of password textfield's string.
+    // email is validated with  collection of some characters,special characters or numbers.
     @IBAction func signupButton(_ sender: UIButton) {
         if let username = usernameText.text, let password = passwordText.text, let email = emailText.text{
             if passwordLength(password: password){
