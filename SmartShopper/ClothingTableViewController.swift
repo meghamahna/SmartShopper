@@ -26,18 +26,19 @@ class ClothingTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    // Returns number os sections
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
+    // TReturns number os rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return clothingData!.count ?? 0
     }
 
-    
+    // Retyurns data in cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cloth")
