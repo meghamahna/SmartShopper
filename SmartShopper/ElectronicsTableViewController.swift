@@ -25,12 +25,16 @@ class ElectronicsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    //Returns number of sections
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
+    //Returns number of rows
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return electronicData!.count ?? 0
