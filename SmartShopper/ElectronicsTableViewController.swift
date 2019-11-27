@@ -43,6 +43,7 @@ class ElectronicsTableViewController: UITableViewController {
     //MARK: - to access the data of electronics and the frame height width measurement
     
     //Returns data in cell
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "electronic")
@@ -53,6 +54,8 @@ class ElectronicsTableViewController: UITableViewController {
 
         return cell!
     }
+    
+    //Returns height of cell
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(180)
