@@ -23,6 +23,8 @@ class ElectronicsWebViewController: UIViewController, WKNavigationDelegate {
             
         }
         
+    //MARK: - For requesting the URL to open up the page of linked website with WebView
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             
