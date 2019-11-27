@@ -36,7 +36,7 @@ class FootwearTableViewController: UITableViewController {
            return footwearData!.count ?? 0
        }
 
-       
+       // Returns data in cell
        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            
            let cell = tableView.dequeueReusableCell(withIdentifier: "footwear")
