@@ -12,6 +12,7 @@ import WebKit
 
 class BooksWebViewController: UIViewController, WKNavigationDelegate {
 
+    //MARK: - WKNavigationDelegate
      var bookDelegate: BooksTableViewController?
        var myWebView: WKWebView!
            
