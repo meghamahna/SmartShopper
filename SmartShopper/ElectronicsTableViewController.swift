@@ -15,6 +15,7 @@ class ElectronicsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: - Tuple for electrtonic brands
         electronicData = [("slickdeals","https://slickdeals.net"),("newegg","https://www.newegg.ca"), ("techbargains","https://www.techbargains.com")]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
