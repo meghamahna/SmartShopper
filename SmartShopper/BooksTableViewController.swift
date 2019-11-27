@@ -32,11 +32,13 @@ class BooksTableViewController: UITableViewController {
     }
     
     // Returns number of rows in table
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return bookData!.count ?? 0
     }
 
+    // Returns data in cell
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
