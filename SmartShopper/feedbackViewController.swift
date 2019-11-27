@@ -28,6 +28,7 @@ class feedbackViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    // Provide the functionality to the button 
     @IBAction func okButton(_ sender: UIButton) {
          feedback?.append(feedbackText.text!)
         feedbackText.text = nil
